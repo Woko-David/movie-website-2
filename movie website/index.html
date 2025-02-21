@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix-Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/download.png">
+</head>
+    
+<body>
+
+    <header class="header">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            
+            <div>            
+                <select class="drop-btn">
+                    <option>English</option>
+                    <option>French</option>
+                    <option>Spanish</option> 
+                    <option>German</option>
+                    <option>Italian</option>
+                    <option>Espanol</option>
+                </select>
+                <!-- <button class="language-btn">English <i class="fa-solid fa-caret-down"></i></button> -->
+                <a href="#"><button id="signin">Sign in</button></a>
+            </div>
+        </nav>
+
+        <div class="header-content">
+            <h1>Unlimited movies, TV shows and more.</h1>
+            <h3>Watch anywhere. Cancel anytime.</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="email-signup">
+                <input type="email" placeholder="Email address" required>
+                <button type="submit">Get Started</button>
+            </form>
+        </div>
+    </header>
+    <div class="features">
+        <div class="row">
+            <div class="text-col">
+                <h2>Enjoy on your TV.</h2>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+                    players and more.</p>
+            </div>
+            <div class="img-col">
+                <img src="images/feature-1.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-col">
+                <img src="images/feature-2.png">
+            </div>
+            <div class="text-col">
+                <h2>Download your shows to watch offline.</h2>
+                <p>Save your favourites easily and always have something to watch.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-col">
+                <h2>Create profiles for children</h2>
+                <p>Send children on adventures with their favourite characters in a space made for them - free with your
+                    membership. </p>
+            </div>
+            <div class="img-col">
+                <img src="images/feature-4.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="first">
+                <label for="first">What is Netflix?</label>
+                <div class="content">
+                    <p>Netflix is a subscription-based streaming service that allows our members to watch TV shows and
+                        movies on an internet-connected device.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="second">
+                <label for="second">How much does Netflix cost?</label>
+                <div class="content">
+                    <p>Netflix currently offers four plans; mobile, basic, standard, and premium. The mobile plan, which
+                        only accommodates one user per time on a mobile device will now cost ₦2,200, up by 83% from
+                        ₦1,200. The basic plan has been increased to ₦3,500 per month from ₦2,900. The standard
+                        subscription which offers HD quality viewing on two devices at a time, has been increased from
+                        ₦4,000 to ₦5,000 per month. The premium plan offering Ultra HD quality on four devices at a time
+                        and download options on six devices will now be ₦7,000 per month.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="third">
+                <label for="third">Where can I watch?</label>
+                <div class="content">
+                    <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at
+                        netflix.com from your personal computer or on any internet-connected device that offers the
+                        Netflix app, including smart TVs, smartphones, tablets, streaming media players and game
+                        consoles.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="fourth">
+                <label for="fourth">How can i cancel?</label>
+                <div class="content">
+                    <p>Go to your Account page and look under the Membership section. You'll see either a link to guide
+                        you through the cancellation process or instructions to contact your payment partner to cancel.
+                        If you cancel with time left in your billing period, you can use Netflix until the end of the
+                        billing period.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="fifth">
+                <label for="fifth">What can I watch on Netflix?</label>
+                <div class="content">
+                    <p>Netflix offers a variety of content, including movies, TV shows, documentaries, stand-up
+                        specials, anime, and original productions. The library varies by region by region due to
+                        licensing agreements.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="sixth">
+                <label for="sixth">Is Netflix good for kids?</label>
+                <div class="content">
+                    <p>Netflix is generally safe for kids when kids profiles and parental controls are used. However,
+                        parents should still monitor content and check ratings.</p>
+                </div>
+            </li>
+        </ul>
+        <small>Ready to watch? Enter your email to create or restart your membership.</small>
+        <form class="email-signup">
+            <input type="email" placeholder="Email address" required>
+            <button type="submit">Get Started</button>
+        </form>
+    </div>
+    <div class="footer">
+        <h2>Questions? call 000-000-0000</h2>
+
+        <div class="row">
+            <div class="col">
+                <a href="#">FAQ</a>
+                <a href="a">Investor Relations</a>
+                <a href="a">Privacy</a>
+                <a href="a">Speed Test</a>
+            </div>
+            <div class="col">
+                <a href="#">Help Center</a>
+                <a href="a">Jobs</a>
+                <a href="a">Cookies Preferences</a>
+                <a href="a">Legal Notices</a>
+            </div>
+            <div class="col">
+                <a href="#">Account</a>
+                <a href="a">Ways to watch</a>
+                <a href="a">Cooperate Information</a>
+                <a href="a">Only on Netflix </a>
+            </div>
+            <div class="col">
+                <a href="#">Media Centre</a>
+                <a href="a">Terms of Use</a>
+                <a href="a">Contact Us</a>
+            </div>
+        </div>
+        <div>            
+            <select class="drop-btn">
+                <option>English</option>
+                <option>French</option>
+                <option>Spanish</option>
+                <option>German</option>
+                <option>Italian</option>
+                <option>Espanol</option>
+            </select>
+            <!-- <button class="language-btn">English <i class="fa-solid fa-caret-down"></i></button> -->
+        </div>
+        <!-- <button class="language-btn">English <i class="fa-solid fa-caret-down"></i></button> -->
+        <p class="copyright_text">Netflix Nigeria</p>
+    </div>
+
+    <div class="form">
+        <form action="" id="sign-in">
+            <i class="fa-solid fa-xmark" id="close1"></i>
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="Email address" autocomplete="email" required name="email">
+            <label for="password"></label>
+            <input type="password" id="password" placeholder="Password" autocomplete="password" minlength="5" maxlength="12"
+                required name="password">
+            <div class="btn">
+
+                <a href=""><button class="light-btn">Log In</button></a>
+            </div>
+            <span class="action">Don't have an account? <a href="#" id="signin-link">Sign Up</a></span>
+        </form>
+
+        <form id="sign-up">
+            <i class="fa-solid fa-xmark" id="close2"></i>
+            <label for="username"></label>
+            <input type="text" id="username" placeholder="Username" required name="username">
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="Email address" autocomplete="email" required name="email">
+            <label for="password"></label>
+            <input type="password" id="password" placeholder="Password" autocomplete="password" minlength="5" maxlength="12" required name="password">
+            <div class="outline">
+                <button class="light-btn" type="button" id="get-started-btn">Get Started</button>
+            </div>
+            <span class="action">Already have an account? <a href="#" id="signup-link">Sign In</a></span>
+        </form>
+    </div>
+<!--     
+    <div class="languages" id="language-select">
+
+        <select name="" id="" >
+            <option value="">Languages</option>
+            <option value="en">English</option>
+            <option value="fr">French</option>
+            <option value="es">Spanish</option>
+            <option value="de">German</option>
+            <option value="it">Italian</option>
+        </select> -->
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
