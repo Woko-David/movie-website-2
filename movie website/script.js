@@ -50,19 +50,32 @@ close2.addEventListener('click', () => {
 // })
 
 
-document.querySelector('.language-btn'). addEventListener('click', function() {
-    const languageSelect = document.getElementById('language-select');
+// document.querySelector('.language-btn'). addEventListener('click', function() {
+//     const languageSelect = document.getElementById('language-select');
     
-    if (languageSelect.style.display === 'none' || languageSelect.style.display === '') {
-        languageSelect.style.display = 'block'; 
-        console.log('language select is == block') // Show the dropdown
-    } else {
-        languageSelect.style.display = 'none';   // Hide the dropdown
-        console.log('language select is == none') // Show the dropdown
+//     if (languageSelect.style.display === 'none' || languageSelect.style.display === '') {
+//         languageSelect.style.display = 'block'; 
+//         console.log('language select is == block') // Show the dropdown
+//     } else {
+//         languageSelect.style.display = 'none';   // Hide the dropdown
+//         console.log('language select is == none') // Show the dropdown
 
-    }
+//     }
+// });
+
+const observer = new IntersectionObserver((entrise) => {
+    entrise.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else{
+            entry.target.classList.remove('show');
+        }
+    });
 });
 
+const hidden =document.querySelectorAll('.hide');
+hidden.forEach((el) => observer.observe(el));
 
 
 
